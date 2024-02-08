@@ -1,6 +1,8 @@
-npm init -y
-npm install express typescript @types/node @types/express ts-node
+```npm init -y```
 
+```npm install express typescript @types/node @types/express ts-node```
+
+```json
 tsconfig.json
 {
   "compilerOptions": {
@@ -11,9 +13,9 @@ tsconfig.json
     "strict": true,
     "esModuleInterop": true
   }
-}
+}```
 
 opsional
-npm install ts-node-dev --save-dev
+```npm install ts-node-dev --save-dev```
 
-npm i --save-dev @types/bcrypt
+```npm i --save-dev @types/bcrypt```
