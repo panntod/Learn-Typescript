@@ -70,11 +70,16 @@ didalam aplikasi ini akan memiliki beberapa fitur yaitu:
 
 1. lakukan konfigurasi dengan menginisialisasi npm:
 
-```npm init -y``` ( fungsi `-y` adalah untuk automasi enter )
+```cmd
+npm init -y
+``` 
+( fungsi `-y` adalah untuk automasi enter )
 
 2. instal beberapa dependensi yang dibutuhkan seprti express body-parser dan lain nya:
 
-```npm install express typescript @types/node @types/express ts-node```
+```cmd
+npm install express typescript @types/node @types/express ts-node
+```
 
 3. buatlah file baru bernama `tsconfig.json`, lalu isi dengan:
 
@@ -95,7 +100,9 @@ tsconfig.json
 4. langkah ini opsional, namun saya rekomendasikan menginstal `ts-node-dev`:
 
 opsional:
-```npm install ts-node-dev --save-dev```
+```
+npm install ts-node-dev --save-dev
+```
 
 jika anda menginstal maka ubah script di `package.json` anda menjadi:
 ```json
@@ -107,17 +114,24 @@ jika anda menginstal maka ubah script di `package.json` anda menjadi:
 
 5. instal dependensi untuk meng-hash password (md5 / bcrypt), disini saya menggunakan `bcrypt`:
 
-```npm i --save-dev @types/bcrypt``` ( pastikan menginstal yang versi typescript)
+```
+npm i --save-dev @types/bcrypt
+``` 
+( pastikan menginstal yang versi typescript)
 
 6. buka file `tsconfig.json` dan tambahkan `allow js`:
 
-```"allowJs": true```
+```json
+"allowJs": true
+```
 
 Kita sudah selesai setup untuk aplikasi kita, sekarang buat folder bernama `src` dan mulai meng-koding!!!
 
 jalankan perintah:
 
-```cd src```
+```
+cd src
+```
 
 lalu lakukan instalasi sequelize sesuai dengan [Repository Ini](https://github.com/panntod/School-Lib-Modul) ( sementara )
 
