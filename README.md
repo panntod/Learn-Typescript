@@ -13,9 +13,13 @@ tsconfig.json
     "strict": true,
     "esModuleInterop": true
   }
-}```
+}
+```
 
 opsional
 ```npm install ts-node-dev --save-dev```
 
 ```npm i --save-dev @types/bcrypt```
+
+tambahkan opsi  di tsconfig:
+````"allowJs": true```
