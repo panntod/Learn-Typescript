@@ -87,3 +87,28 @@ export const updateUser = async (req: Request, res: Response) => {
     });
   }
 }
+
+export const deleteUser = async (req: Request, res: Response) => {
+  let idUser = req.params.id
+
+  try {
+    const result = await userModel.destroy({ where: { userID: idUser} })
+
+    if (result === 1) {
+      return res.status(200).json({
+        success: true,
+        message: "Data user has been deleted",
+      });
+    } else {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+  } catch (error: any) {
+    return res.json({
+      success: false,
+      message: error.message,
+    });
+  }
+}

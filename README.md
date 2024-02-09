@@ -133,7 +133,17 @@ jalankan perintah:
 cd src
 ```
 
-lalu lakukan instalasi sequelize sesuai dengan [Repository Ini](https://github.com/panntod/School-Lib-Modul) ( sementara )
+lalu lakukan perintah:
+```
+npx sequelize-cli model:generate --name user --attributes firstname:string,lastname:string,email:string,  password:string,role:string 
+```
+untuk membuat models dari user
+
+lalu jalankan perintah:
+```
+npx sequelize-cli db:migrate
+```
+untuk migrate sebuah tabel didata base
 
 ## Reminder
 
@@ -164,7 +174,7 @@ interface DataUser {
 }
 ```
 
-mendeklarasikan interface dari data user, digunakan untuk mengirim data bisa jadi `POST`, `PATCH` atau `PUT`, jadi saya tidak perlu mendeklarasikan dua kali ketika menggunakan interface ini. untuk interface ini bersifat wajib harus dipenuhi, jika salah satu data tidak terisi maka akan muncul pesan error, namun bisa menambahkan `?` untuk menjadikan suatu  variabel itu opsional
+mendeklarasikan interface dari data user, digunakan untuk mengirim data bisa jadi `POST`, `PATCH` atau `PUT`, jadi saya tidak perlu mendeklarasikan dua kali ketika menggunakan interface ini. untuk interface ini bersifat wajib harus dipenuhi, jika salah satu data tidak terisi maka akan muncul pesan error, namun bisa menambahkan `?` untuk menjadikan suatu data itu opsional
 
 contoh:  
 
