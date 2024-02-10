@@ -1,70 +1,77 @@
-# Sales Ticket Typescript
+# Express Typescript 🚀
 
 ## Deskripsi
 
-Dalam repo ini, berisikan dokumentasi belajar typescript dari saya ( day 1 ) yang belum pernah mencoba menggunakan typescript. namun sudah berpengalaman menggunakan bahasa yang mirip seperti golang dan java, dan memiliki keahlian dalam menggunakan javascript. Untuk melanjutkan pemahaman menggunakan typescript pastikan sudah memiliki basic skill yaitu:
-- Pemahaman Dasar JavaScript: TypeScript adalah superset dari JavaScript, sehingga memiliki pemahaman yang baik tentang JavaScript sangat penting. Pastikan Anda mengerti konsep dasar seperti variabel, tipe data, fungsi, struktur kontrol (if, else, switch), dan objek.
-- Node.js dan NPM: Mengetahui cara menggunakan Node.js dan NPM (Node Package Manager) akan membantu Anda dalam pengembangan aplikasi TypeScript. 
-- HTML dan CSS: Pemahaman dasar tentang HTML dan CSS berguna, terutama jika Anda berencana untuk mengembangkan aplikasi web menggunakan TypeScript.
-- Pemahaman Dasar Tentang REST API: Jika Anda berencana untuk berinteraksi dengan backend melalui RESTful API, memiliki pemahaman dasar tentang cara API berfungsi 
-- Penggunaan Terminal/Command Line: Pemahaman dasar tentang cara menggunakan terminal atau command line akan berguna dalam menjalankan skrip, mengelola proyek, dan menjalankan perintah lainnya
-- Pemahaman Tentang TDD (Test-Driven Development): Meskipun ini mungkin bukan keterampilan dasar, pemahaman dasar tentang TDD 
+Selamat datang di dokumentasi perjalanan saya dalam belajar TypeScript dengan Express! 👩‍💻 Dalam repo ini, saya mencatat pengalaman belajar TypeScript dari level zero (day 1). Meski belum pernah mencoba TypeScript sebelumnya, saya telah memahami bahasa pemrograman mirip seperti Golang dan Java, serta memiliki keahlian dalam JavaScript.
 
-### Perbedaan Javascript vs Typescript
+Untuk memaksimalkan pemahaman TypeScript, pastikan sudah memiliki basic skills berikut:
+- Pemahaman Dasar JavaScript 🚀
+- Node.js dan NPM 📦
+- HTML dan CSS 💻
+- Pemahaman Dasar Tentang REST API 🌐
+- Penggunaan Terminal/Command Line 🛠️
+- Pemahaman Tentang TDD (Test-Driven Development) 🧪
 
-JavaScript (JS) dan TypeScript (TS) adalah dua bahasa pemrograman yang terkait erat, tetapi memiliki perbedaan signifikan dalam hal penggunaan dan fitur. Berikut adalah beberapa perbedaan kunci antara JavaScript dan TypeScript:
+### Perbedaan JavaScript vs TypeScript
 
-`Tipe Data:`
+#### Tipe Data
 
-JavaScript: Adalah bahasa pemrograman yang bersifat dinamis, di mana tipe data variabel ditentukan secara otomatis saat runtime.
-TypeScript: Adalah superset dari JavaScript yang menambahkan sistem tipe opsional. Dengan TypeScript, Anda dapat mendeklarasikan tipe data untuk variabel, parameter fungsi, dan hasil fungsi.
+**JavaScript:** Bersifat dinamis, tipe data ditentukan saat runtime.
 
-Penggunaan Tipe:
+**TypeScript:** Superset dari JavaScript dengan sistem tipe opsional.
 
-JavaScript: Tidak memiliki sistem tipe yang ketat, dan variabel dapat dengan mudah diubah tipe data-nya selama runtime.
-TypeScript: Memiliki sistem tipe yang kuat. Anda dapat mendeklarasikan tipe data seperti string, number, boolean, dan lainnya untuk membantu mencegah kesalahan tipe selama pengembangan.
+#### Penggunaan Tipe
 
-`Kompilasi:`
+**JavaScript:** Tidak memiliki sistem tipe yang ketat.
 
-JavaScript: Kode JavaScript dieksekusi langsung oleh mesin JavaScript di runtime.
-TypeScript: Kode TypeScript perlu dikompilasi menjadi JavaScript sebelum dijalankan. Ini dilakukan menggunakan compiler TypeScript (tsc), dan hasilnya adalah file JavaScript yang dapat dijalankan di browser atau runtime Node.js.
+**TypeScript:** Memiliki sistem tipe kuat untuk mencegah kesalahan.
 
-`Alat Bantu (Tooling):`
+#### Kompilasi
 
-JavaScript: Ketersediaan alat bantu (tooling) seperti linter dan debuggers tergantung pada lingkungan pengembangan (browser, Node.js, dll.).
-TypeScript: Memiliki dukungan lebih lanjut untuk alat bantu pengembangan. TypeScript menyediakan fitur-fitur seperti pengecekan tipe saat penulisan kode, dukungan penuh untuk intelisense, dan analisis statis untuk membantu mengidentifikasi kesalahan potensial.
+**JavaScript:** Dieksekusi langsung oleh mesin JavaScript di runtime.
 
-`Ekosistem:`
+**TypeScript:** Perlu dikompilasi menjadi JavaScript sebelum dijalankan.
 
-JavaScript: Memiliki ekosistem yang sangat besar dan mapan dengan berbagai pustaka dan framework, seperti React, Angular, dan Vue.js.
-TypeScript: Secara kompatibel dengan ekosistem JavaScript dan dapat digunakan dengan banyak pustaka dan framework yang ada. Beberapa proyek besar menggunakan TypeScript, dan banyak pustaka juga menyediakan definisi tipe TypeScript (dikenal sebagai DefinitelyTyped) untuk mendukung pengembangan menggunakan TypeScript.
+#### Alat Bantu (Tooling)
 
-`Pemrograman Berorientasi Objek:`
+**JavaScript:** Bergantung pada lingkungan pengembangan.
 
-JavaScript: Mendukung paradigma pemrograman berorientasi objek.
-TypeScript: Memiliki dukungan yang lebih baik untuk pemrograman berorientasi objek, termasuk fitur-fitur seperti kelas, pewarisan, dan antarmuka.
+**TypeScript:** Dukungan lebih lanjut untuk alat bantu pengembangan.
 
-`Penggunaan Default dan Opsional:`
+#### Ekosistem
 
-JavaScript: Variabel dan parameter fungsi bersifat opsional dan dapat dibiarkan tanpa nilai.
-TypeScript: Memungkinkan deklarasi variabel dan parameter fungsi dengan nilai default serta mendukung parameter opsional dengan menandainya dengan tanda tanya (?).
+**JavaScript:** Ekosistem besar dan mapan dengan berbagai pustaka dan framework.
 
-`Komunitas dan Dukungan:`
+**TypeScript:** Kompatibel dengan ekosistem JavaScript, banyak proyek besar menggunakan TypeScript.
 
-JavaScript: Memiliki komunitas yang sangat besar dan aktif, serta dukungan luas dari berbagai sumber dan forum.
-TypeScript: Memiliki komunitas yang terus berkembang, dengan dukungan aktif dari Microsoft dan komunitas open source.
-Penting untuk dicatat bahwa meskipun TypeScript memperkenalkan fitur-fitur tambahan, Anda masih dapat menggunakan JavaScript dalam proyek TypeScript tanpa masalah. TypeScript dirancang untuk memberikan keleluasaan kepada pengembang dan dapat diintegrasikan secara bertahap ke dalam proyek-proyek JavaScript yang ada.
+#### Pemrograman Berorientasi Objek
 
-`sumber: ChatGPT`
+**JavaScript:** Mendukung paradigma pemrograman berorientasi objek.
 
-## Fitur
+**TypeScript:** Dukungan yang lebih baik untuk pemrograman berorientasi objek.
 
-didalam aplikasi ini akan memiliki beberapa fitur yaitu:
-- Sistem CRUD
-- Koneksi dengan database ( MySql )
-- Endpoint
-- Rest API
-- Sequelize ( versi js, untuk versi ts akan berada di repository lain )
+#### Penggunaan Default dan Opsional
+
+**JavaScript:** Variabel dan parameter fungsi bersifat opsional.
+
+**TypeScript:** Mendukung nilai default dan parameter opsional.
+
+#### Komunitas dan Dukungan
+
+**JavaScript:** Komunitas besar dan aktif.
+
+**TypeScript:** Komunitas yang terus berkembang dengan dukungan dari Microsoft.
+
+*Penting: TypeScript memberikan keleluasaan kepada pengembang dan dapat diintegrasikan bertahap ke dalam proyek JavaScript.*
+
+### Fitur
+
+Aplikasi ini akan menawarkan beberapa fitur menarik:
+- Sistem CRUD 🗃️
+- Koneksi dengan database (MySql) 🔄
+- Endpoint 🌐
+- Rest API 🚀
+- Sequelize (versi js, untuk versi ts akan berada di repository lain) 🔍
 
 ## Konfigurasi project
 
