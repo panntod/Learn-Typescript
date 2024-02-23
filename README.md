@@ -85,7 +85,7 @@ npm init -y
 2. instal beberapa dependensi yang dibutuhkan seprti express body-parser dan lain nya:
 
 ```cmd
-npm install express typescript @types/node @types/express ts-node
+npm install express typescript @types/node @types/express ts-node mysql2
 ```
 
 3. buatlah file baru bernama `tsconfig.json`, lalu isi dengan:
