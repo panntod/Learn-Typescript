@@ -140,6 +140,11 @@ jalankan perintah:
 cd src
 ```
 
+Jalankan perintah untuk menginisiaisasi sequelize:
+```
+npx sequelize-cli init 
+```
+
 lalu lakukan perintah:
 ```
 npx sequelize-cli model:generate --name user --attributes firstname:string,lastname:string,email:string,  password:string,role:string 
