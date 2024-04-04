@@ -1,4 +1,4 @@
-import { JwtPayload, TokenExpiredError, sign, verify } from "jsonwebtoken";
+import { sign, verify } from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
 
