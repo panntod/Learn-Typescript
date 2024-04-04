@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const userModel = require("../models/index").user;
+const userModel = require("../db/models/index").user;
 import { Request, Response } from "express";
 
 export const getAllUser = async (req: Request, res: Response) => {
